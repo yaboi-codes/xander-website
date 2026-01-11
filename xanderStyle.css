@@ -1,0 +1,135 @@
+/* ======================== general ===================== */
+html, body {
+background-color: black;
+color: white;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+h1 {
+ font-family: 'Montserrat', sans-serif;
+}
+h2 {
+ font-family: 'Montserrat', sans-serif;
+}
+h3 {
+ font-family: 'Montserrat', sans-serif;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* ======================== main section ===================== */
+#main {
+
+}
+.main-content {
+  height: 51rem;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black 100%),
+    url('xander site pic.JPG');
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.sub-main-content {
+  margin: 6% 5%;
+}
+.main-header{
+  justify-content: end;
+  display: flex;
+  flow-direction: row-reverse;
+}
+.header-content {
+  font-size: 14vmin;
+}
+.main-paragraph {
+  width: 40rem;
+}
+.main-footer {
+  justify-content: center;
+  display: flex;
+  flow-direction: row-reverse;
+  margin-left: 12.5%;
+}
+.main-nav {
+  padding: 1% 3%;
+}
+.socials-link {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 1s 0s;
+  margin: 0.5%;
+}
+.socials-link:hover {
+  opacity: 70%;
+}
+/* ======================== trading section ===================== */
+#trading {
+}
+.trading-section {
+  background-image: url('trading B&L .webp');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position-x: left;
+  background-position-y: 20%;
+}
+.trading-content-border {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 51rem;
+}
+.trading-content {
+  background-color: #000000;
+  font-size: x-large;
+  border-color: #dbdbdb;
+  padding: 2%;
+  width: 70%;
+  text-align: center;
+  color: #dbdbdb;
+  margin: 0;
+  border-style: outset;
+}
+/* ======================== phone optimisation ===================== */
+@media (max-width: 500px) {
+  /* =========== main ============ */
+  .main-content {
+
+  }
+  .sub-main-content {
+    margin: auto;
+    position: relative;
+    top: 34%;
+  }
+  .main-header {
+    justify-content: center;
+  }
+  .main-footer {
+    margin-left: auto;
+  }
+  .header-content {
+    font-size: -webkit-xxx-large;
+    text-align: left;
+  }
+  .footer-content {
+    font-size: medium;
+  }
+  /* =========== trading ============ */
+  .trading-section {
+    background-size: 300%;
+    background-position-x: 0;
+    background-position-y: 75%;
+  }
+  .trading-content {
+    font-size: large;
+    width: 80%;
+    padding: 3%;
+    border-style: hidden;
+  }
+}
