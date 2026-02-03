@@ -1,0 +1,166 @@
+/* ======================== general ===================== */
+html, body {
+background-color: black;
+color: white;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+h1 {
+ font-family: 'Montserrat', sans-serif;
+}
+h2 {
+ font-family: 'Montserrat', sans-serif;
+}
+h3 {
+ font-family: 'Montserrat', sans-serif;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* ======================== navigation section ===================== */
+.main-nav {
+  padding: 0.5%;
+  position: absolute;
+  right: 0%;
+  width: -webkit-fill-available;
+  justify-content: flex-end;
+}
+.socials-link {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 1s 0s;
+  margin: 0.5%;
+}
+.socials-link:hover {
+  opacity: 70%;
+}
+
+/* ======================== main section ===================== */
+#main {
+
+}
+.main-background {
+  height: 51rem;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black 100%),
+    url('xander site pic.JPG');
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.main-content {
+  position: relative;
+  left: 30%;
+  top: 17%;
+  width: fit-content;
+}
+.main-header{
+
+}
+.header-content {
+  font-size: 14vmin;
+}
+.main-paragraph {
+  width: 40rem;
+}
+.main-footer {
+
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+/* ======================== trading section ===================== */
+#trading {
+}
+.trading-section {
+  background-image: url('trading B&L .webp');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position-x: left;
+  background-position-y: 20%;
+}
+.trading-content-border {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 51rem;
+}
+.trading-content {
+  background-color: #000000;
+  font-size: x-large;
+  border-color: #dbdbdb;
+  padding: 2%;
+  width: 70%;
+  text-align: center;
+  color: #dbdbdb;
+  margin: 0;
+  border-style: outset;
+}
+/* ======================== phone optimisation ===================== */
+@media (max-width: 500px) {
+  /* =========== navigation ============ */
+  .main-nav {
+    justify-content: center;
+    position: inherit;
+    padding: 1%;
+  }
+
+  /* =========== main ============ */
+  .main-background {
+
+  }
+  .main-content {
+    margin: auto;
+    position: relative;
+    top: 34%;
+    left: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .main-header {
+
+  }
+  .main-footer {
+
+  }
+  .header-content {
+    font-size: 3rem;
+    text-align: left;
+    text-shadow: -3px -2px 6px black;
+  }
+  .footer-content {
+    font-size: 1rem;
+    text-shadow: -1px 0px black;
+    text-align: center;
+  }
+  /* =========== trading ============ */
+  .trading-section {
+    background-size: 325%;
+    background-position-x: 0;
+    background-position-y: 75%;
+  }
+  .trading-content {
+    font-size: large;
+    width: 80%;
+    padding: 3%;
+    border-style: hidden;
+  }
+}
+@media (max-width: 376px) {
+  .header-content {
+    font-size: 2.75rem;
+  }
+}
